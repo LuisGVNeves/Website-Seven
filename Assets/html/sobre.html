@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="./Public/css/sobre.css">
+  </head>
+  <body>
+    
+    <header>
+      <h1>Como o Bot Seven foi criado</h1>
+    </header>
+
+
+    <main>
+      <section>
+        <p>
+          Para entender a criação do bot Seven, temos que dar uma passada sobre o Processo estocastico, 
+          e podemos pensar no Processo estocástico como uma variável aleatória que evolui no tempo.
+
+          - Inclusive essa variável pode mudar com a evolução do tempo. E quando falamos tempo, não estamos necessariamente
+          falando literalmente da palavra, e sim o tempo pode ser algo abstrato, de acordo com o que estamos observando. 
+          - Alguns exemplos de uma variável aleatória evoluindo no tempo: 
+            1. Cotações de ativos financeiros - Temos o ativo que é a nossa variável, e a cada hora,dia,mês,ano.. E a cotação vai
+            se ajustando com o tempo, podendo ficar valorizada, ou desvalorizada.
+    
+            2. Gráfico de mercados Financeiros - Temos as velas(candlesticks) do gráfico, que vão representar o preço de compra e venda
+            daquela determinada vela, e essa vela seria a nossa variável, e com o passar do tempo(constante) a cada minuto, dependendo
+            do gráfico, essa nossa variável vai mudando.
+        
+        Considere a variável aleatória X, podendo ser um dadinho de brinquedo que tem seis valores, se lançarmos esse dado de 6 valores
+        10 vezes, qual a chance de cair o mesmo valor? E a grande questão do processo estocásticos: O passado, interfere no futuro?
+        Para o dado cair mais de uma vez, no mesmo valor, depende das ocorrências(jogadas) anteriores?  
+
+        Suponha que você jogue 5 vezes, e nas 5 vezes, cai o valor 2 do dado, você pensaria: "Será que na 6 jogada vai cair o valor 2"?
+      
+        
+        <p><strong>X = Dado</strong></p>
+        <p><strong> Valor do dado = 2</strong></p>
+        <p><strong><sub>1,2,3,4,5 = Jogadas</sub></strong></p>
+
+        <p> <strong> <sup>X <sub>1</sub> = 2 </sup> </strong> </p>
+        <p> <strong> <sup>X <sub>2</sub> = 2 </sup> </strong>  </p>
+        <p> <strong> <sup>X <sub>3</sub> = 2 </sup> </strong>  </p>
+        <p> <strong> <sup>X <sub>4</sub> = 2 </sup> </strong>  </p>
+        <p> <strong> <sup>X <sub>5</sub> = 2 </sup> </strong>  </p>
+
+        <p><strong>" Será que na 6 jogada vai cair o valor 2 de novo ? "</strong></p>
+
+        
+        <span>
+          - Muita gente que não conhece o processo estocástico falaria: <strong>"Caiu o valor 2, cinco vezes seguidas.. Não tem chance da 6 vez cair o 2!"</strong>.
+          Errado ! A chance de ocorrer o número 2 de novo é "alta", baseado nas jogadas anteriores, vamos ter 1/5 de chance de vir de novo.
+          1/5 * 100 = 20% de chance contra a aleatoriedade.
+          <p>
+            - É como no cara ou coroa, eu não sei qual vai ser o resultado, se vai sair cara ou coroa, mas eu sei que existe
+            uma Possibilidade de 50% de chance de vir Cara e 50% de chance de vir Coroa
+          </p>
+        </span>
+
+        <h2>Processo Estocástico - Cadeia de Markov</h2>
+        <p>
+          Cadeia de Markov basicamente vai analisar a última ocorrência, e a probabilidade da próxima vir igual, 
+          baseado na última ocorrência. Na cadeia de Markov o passado remoto não é relevante, apenas a última ocorrência.
+          Por esse processo, é onde eu me inspirei para fazer o <strong>Bot Turbing</strong>, que também é um bot de minha criação,
+          e inspirado no processo estocástico de uma Cadeia de Markov. Onde o bot não vai analisar o passado do gráfico, ele vai analisar
+          a última ocorrência da vela. 
+        </p>
+  
+        
+        <section>
+          <h2>Criação do Algoritmo Seven</h2>
+          <p>
+            Com isso explicado, o Seven vai pegar Seis velas do gráfico, e análisar a sua movimentação,
+            vai identificar qual foi o ponto mais alto e mais baixo da abertura e fechamento de vela do gráfico,
+            e se o padrão detectado for de 6 velas superiores, indicando uma <strong>LTA(Linha de tendência de alta)</strong>  então
+            ele vai dar uma entrada de CALL, prevendo um futuro movimento, acreditando que a 7 vela vai ser de Compra também.
+          </p>
+        </section>
+      </section>
+    </main>
+
+  </body>
+</html>

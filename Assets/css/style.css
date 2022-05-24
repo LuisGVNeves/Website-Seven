@@ -1,0 +1,250 @@
+/*Geral*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: #0c0c0c;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  color: #ffffff;
+  text-shadow: 1px 1px #f50000;
+}
+
+p {
+  color: #5e5f61;
+}
+
+/* navbar => Header */
+/* .navbar-container {
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height: 30vh;
+} */
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a #logo {
+  margin-right: 20rem;
+  width: 20rem;
+}
+
+
+
+/*ul items*/
+.navbar-items {
+  list-style: none;
+  height: 80px;
+  line-height: 100px;
+  width: 40vw;
+  text-align: center;
+  float: right;
+}
+
+.navbar-items li {
+  display: inline-block; /*Ficar em linha*/
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  /*Após passar mouse*/
+  color: #838383;
+  font-weight: bold;
+}
+
+/*Banner principal*/
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 0em 5em 0em;
+  width: 80vw;
+  height: 20%;
+  border-top: #ffffff 1px solid;
+  border-bottom: #ffffff 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-banner h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-banner p {
+  color: #fafafa;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+#saiba-mais a {
+  padding-left: 28px;
+  line-height: 60px;
+  font-size: 20px;
+}
+#saiba-mais {
+  height: 60px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0c0c0c;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+#saiba-mais:hover {
+  background-color: #141414;
+  transition: 0.3s;
+  border: 1px solid rgb(124, 124, 124);
+}
+
+#compra {
+  color: rgb(102, 206, 102);
+}
+#venda {
+  color: #dd2929;
+}
+
+/*Anuncio bots*/
+.specialties-container {
+  padding: 5em 0;
+}
+
+.specialties-container ul {
+  display: flex;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.specialties-container ul li {
+  flex: 1 1 200px;
+  /*   Grow shrink basis*/
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  color: #eb4141;
+  margin: 10px;
+  height: 40em;
+  border: 1px solid #fff;
+}
+
+.bot-Photos {
+  width: 200px;
+}
+
+/*Preços*/
+
+.pricing-container {
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+.pricing-container h1 {
+  font-size: 36px;
+}
+.pricing-container p {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/*Planos*/
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.plan {
+  flex: 1 1 200px;
+  max-width: 450px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.plan ul {
+  padding: 0;
+}
+
+.plan li {
+  list-style: none;
+  height: 80px;
+  line-height: 80px;
+  background-color: #141414;
+  color: rgb(94, 94, 94);
+}
+
+.plan .price {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 120px;
+  font-size: 18px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px; /*Para entrar dentro da div*/
+}
+
+.plan .plan-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(12, 12, 12);
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*bOTÃO*/
+.plan .btn-selecionar {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 24px;
+  height: 65px;
+  line-height: 65px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.plan .btn-selecionar:hover {
+  background-color: #000;
+  color: #b6b6b6;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 35%;
+  right: 32%;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "website-seven",
+  "version": "1.0.0",
+  "description": "1 versão do meu site sobre o bot seven",
+  "main": "script.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisGVNeves/Website-Seven.git"
+  },
+  "author": "Luis Guilherme Vieira Neves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisGVNeves/Website-Seven/issues"
+  },
+  "homepage": "https://github.com/LuisGVNeves/Website-Seven#readme"
+}
